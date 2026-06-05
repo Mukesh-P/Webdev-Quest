@@ -1,1 +1,45 @@
-/* Add Avatar styles here */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e5e7eb;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-sm {
+  width: 28px;
+  height: 28px;
+  font-size: 0.7rem;
+}
+
+.avatar-lg {
+  width: 56px;
+  height: 56px;
+  font-size: 1.1rem;
+}
+
+.avatar-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar-group .avatar {
+  margin-left: -8px;
+  border: 2px solid #fff;
+}
+
+.avatar-group .avatar:first-child {
+  margin-left: 0;
+}

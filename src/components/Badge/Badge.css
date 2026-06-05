@@ -1,1 +1,26 @@
 /* Add Badge styles here */
+.badge{
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-success{
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.badge-warning{
+    background-color: #fef9c3;
+    color: #ca8a04;
+}
+
+.badge-danger{
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+.badge-pill{
+    border-radius: 9999px;
+}

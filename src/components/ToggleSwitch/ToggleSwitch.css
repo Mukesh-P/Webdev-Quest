@@ -1,1 +1,42 @@
 /* Add ToggleSwitch styles here */
+.toggle-switch{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.toggle-thumb{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.sr-only:checked + .toggle-track {
+    background-color: #3b82f6;
+}
+
+.sr-only:checked + .toggle-track .toggle-thumb{
+    transform: translateX(20px);
+}
+
+sr-only:disabled + .toggle-track{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
